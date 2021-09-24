@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary: rgb(213,50,37);
+}
+
+.top_header_container{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    background: var(--primary);
+    background: linear-gradient(90deg, rgba(213,50,37,1) 0%, rgba(251,77,78,1) 33%, rgba(221,77,63,1) 100%);
+
+    .top_header{
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 5% 0;
+        h4{
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .container{
+        .row{
+            display: flex;
+            align-items: center;
+            .col{
+                h5{
+                    font-size: 32px;
+                    color: #fff;
+                    margin-bottom: 20px;
+                }
+                p{
+                    max-width: 500px;
+                    font-size: 14px;
+                    color: #fff;
+                    line-height: 1.7rem;
+                }
+            }
+        }
+    }
+
+    .commingsoom{
+        position: absolute;
+        bottom: -50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.form-control{
+    border-color: #222;
+    border-radius: 3px;
+}
+
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: var(--primary);
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:focus{
+    background: var(--primary);
+    border-color: var(--primary);
+    box-shadow: none !important;
+}
+
+// Responsive
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 776px) { 
+    .top_header_container{
+        height: 90vh;
+    }
+    .contact_section{
+        padding: 100px 10px;
+    }
+    .top_header{
+        padding: 10% 0;
+        h4{
+            padding: 0;
+            margin: 0;
+            font-size: 18px;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    body{
+        background: #fcfcfc ;
+    }
+    .contact_section{
+        padding: 120px 10px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .contact_section{
+        padding: 120px 20px;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .contact_section{
+        padding: 120px 20px;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .contact_section{
+        padding: 120px;
+    }
+}
